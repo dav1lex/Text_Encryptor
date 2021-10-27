@@ -1,0 +1,2 @@
+rootProject.name = "BGY KufurMatik"
+include ':app'

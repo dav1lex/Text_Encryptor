@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menugroup"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/mainpage"
+            android:title="Home" />
+        <item
+            android:id="@+id/checkalp"
+            android:title="Check alphabet" />
+        <item
+            android:id="@+id/credits"
+            android:title="Credits"/>
+
+
+    </group>
+
+</menu>

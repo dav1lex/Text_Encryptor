@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    android:scrollbars="none"
+    tools:context="com.omer.encryptor.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/edittextkutu"
+            android:fontFamily="@font/g_light"
+            android:gravity="center"
+            android:text="Luga Encrypt"
+            android:textColor="@android:color/black"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:fontFamily="@font/g_light"
+            android:background="@drawable/edittextkutu"
+            android:text="You feel unsafe on the internet? Here you can encrypt your words and share it
+with another user, nobody will understand what happens on internet. \n You are safe ;)"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+
+        <TextView
+            android:id="@+id/cevir1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:text="Encrypt your text:"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+
+        <EditText
+            android:id="@+id/text_pass_et"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/cevir1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextkutu"
+            android:fontFamily="@font/g_light"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:textSize="29sp" />
+
+        <Button
+            android:id="@+id/butonenc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_pass_et"
+            android:layout_centerHorizontal="true"
+            android:text="Encrypt" />
+
+        <Button
+            android:id="@+id/clear1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/text_pass_et"
+            android:layout_toRightOf="@+id/cevir1"
+            android:text="Clear" />
+
+
+        <TextView
+            android:id="@+id/abc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/butonenc"
+            android:layout_centerHorizontal="true"
+            android:text="Encrypted text:"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/text_pass_result"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/abc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextkutu"
+            android:fontFamily="@font/g_light"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:textSize="29sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/text_pass_result"
+            android:layout_marginTop="15dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/enc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_pass_result"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:text="Encrypted text:"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+
+        <EditText
+            android:id="@+id/sifre_turkce_ET"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/enc2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextkutu"
+            android:fontFamily="@font/g_light"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:textSize="29sp" />
+
+        <Button
+            android:id="@+id/butonenc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sifre_turkce_ET"
+            android:layout_centerHorizontal="true"
+            android:text="Decrypt" />
+
+        <Button
+            android:id="@+id/clear2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/sifre_turkce_ET"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/butonenc2"
+            android:text="Clear"/>
+
+        <TextView
+            android:id="@+id/abc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/butonenc2"
+            android:layout_centerHorizontal="true"
+            android:text="Decrypted text:"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/pass_text_result"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/abc2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextkutu"
+            android:fontFamily="@font/g_light"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:textSize="29sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/pass_text_result" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

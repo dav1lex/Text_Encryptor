@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context="com.omer.encryptor.Menu_alfabe">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/g_light"
+            android:text="Alphabet Lugat"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="450dp"
+            android:layout_height="450dp"
+            android:layout_below="@id/title"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/alphabet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextkutu"
+            android:fontFamily="@font/g_light"
+            android:gravity="center"
+            android:text="Keep safe and stay hidden"
+            android:textColor="@color/black"
+            android:id="@+id/tv123"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_below="@+id/tv123"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
